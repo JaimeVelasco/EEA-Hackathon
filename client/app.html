@@ -48,8 +48,15 @@
           </div>
         </div>
         <div class='map-overlay-inner'>
-          <h2>Compare today's levels to:</h2>
-          <label> {{date}} </label>
+          <h2>Compared to {{date}}:</h2>
+          <div class="flexContainer">
+            <h4>San Antonio:<br> {{sanAntonioCompare}}<br> </h4>
+            <h4>Comal: <br> {{comalCompare}}</h4>
+            <h4>Hondo: <br> {{hondoCompare}}</h4>
+            <h4>San Marcos: <br> {{sanMarcosCompare}}</h4>
+            <h4>Uvalde: <br> {{uvaldeCompare}}</h4>
+          </div>
+          <label> Slide to change year </label>
           <input id='slider' type='range' min='1932' max='2016' step='1' value='0' />
         </div>
       </div>
